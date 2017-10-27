@@ -5,7 +5,7 @@ let articleView = {};
 // DONE: Where possible, refactor methods into arrow functions, including the document.ready() method at the bottom.
 
 // COMMENT: How do arrow functions affect the context of "this"? How did you determine if a function could be refactored?
-// PUT YOUR RESPONSE HERE
+// Now, "this" is not interally bound to the arrow function like it would be for a normal function syntax, as normal Javascript functions bind their own this value.  Instead, "this" is fetched from the scope it sits inside for the particular arrow function.
 
 articleView.populateFilters = () => {
   $('article').each(function() {

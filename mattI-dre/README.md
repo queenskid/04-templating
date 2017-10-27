@@ -64,26 +64,31 @@ _Your repository must include:_
 _Your README.md must include:_
 
 ```md
-# Project Name
+# 04-Templating
 
-**Author**: Your Name Goes Here
-**Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
+**Author**: Matt Iwicki and Dre Ibarra
+**Version**: 1.0.3
 
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
+Overall, we want to build a blog website that filters entries based on user preference as well as allows for new entries from the users themselves.  Today, we reformatted the code to maintain its sorting functionality while including arrow functions and mustache methods.  
 
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+To build this app up to this point, one must include a set of raw data, build a constructor function for the raw data with each article as an instance of that constructor, append those instances to the page, sort the instances by author name and category based on user input of click events within a drop-down menu selector, have a shift tab functionality that hides and shows appropriate tabs of the page based on click events, and have the page be responsive to the user's interface.  
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+Using HTML for templates, CSS for styling, jQuery and handlebars for additional functionality, and JavaScript for overall functionality in response to user input.  
 
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
-
+10-27-2017 10:18am - Initialized the app with style sheets and starter code, added mustache functionality
+10-27-2017 11:18am - Fixed read on functionality with handlebars
+10-27-2017 12:00am - Refactoring functions to arrow format
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+Jeff K, Seth, Rob, and Frank all helped when we were stuck, plus JB was always looking over to make sure we were going smoothly.  
 -->
 ```
