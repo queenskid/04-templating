@@ -31,12 +31,14 @@
         - If your object doesn't have values you need yet, you can add those properties in the model.
     -->
     <script id="articles-template" type="text/x-handlebars-template">
-      <div>
-        <h1>Title {{title}}</h1>
-        <!-- <h4>{{category}}</h4> -->
-        <h4>By <a href="{{authorUrl}}"> {{author}}<a/> published on {{publishedOn}}</h4>
-        {{{body}}}
-      </div>
+      <article data-category="{{category}}" data-author="{{author}}">
+        <header>
+          <h1>Title {{title}}</h1>
+          <div class="byline">By <a href="{{{authorUrl}}}"> {{author}}<a/> published on {{publishedOn}}</div>
+        </header>
+        <section class="article-body">{{{body}}}</section>
+        <a href="#" class="read-on">Read on &rarr;</a>
+      </article>
     </script>
 
   </head>
